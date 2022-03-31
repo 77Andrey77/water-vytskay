@@ -4,8 +4,207 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Вяцкая вода</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <!-- шапка сайта -->
+      <header class="header">
+        <div class="header-container">
+          <img src="./img/logo.svg" alt="логотип Вяцкая вода" class="logo" />
+          <nav class="nav">
+            <a href="#" class="nav-link">производство</a>
+            <a href="#" class="nav-link">вода</a>
+            <a href="#" class="nav-link">напитки</a>
+            <a href="#" class="nav-link">доставка</a>
+            <a href="#" class="nav-link">контакты</a>
+          </nav>
+        </div>
+        <!-- /.header-container -->
+      </header>
+
+      <!-- главная секция -->
+      <section class="hero">
+        <div class="hero-left">
+          <h1 class="hero-title">
+            артезианская вода с доставкой <br />по казани
+          </h1>
+
+          <form>
+            <input type="text" placeholder="ваш телефон" />
+            <button class="button-order">заказать</button>
+          </form>
+        </div>
+        <div class="hero-rigth">
+          <ul class="list-link">
+            <li class="hero-link">
+              <a class="link" href="tel:+7 (8334) 3-83-66">
+                +7 (8334) 3-83-66
+                <img src="./img/icon-phone.svg" alt="иконка телефона" />
+              </a>
+            </li>
+            <li class="hero-link">
+              <a class="link" href="https://wa.me/+7 (953) 696-83-66">
+                +7 (953) 696-83-66
+                <img src="./img/icon-watrapp.svg" alt="иконка ватсап" />
+              </a>
+            </li>
+            <li class="hero-link">
+              <a class="link" href="https://www.instagram.com/@vodaviatskaia">
+                @vodaviatskaia
+                <img src="./img/icon-instagram.png" alt="иконка инсты" />
+              </a>
+            </li>
+          </ul>
+
+          <div class="bottle-container">
+            <img
+              class="bottle-1"
+              src="./img/bottle-of-water-1.png"
+              alt="бутыль с водой 1"
+            />
+
+            <img
+              class="bottle-2"
+              src="./img/bottle-of-water-2.png"
+              alt="бутыль с водой 2"
+            />
+          </div>
+        </div>
+        <!-- /.hero-rigth -->
+      </section>
+    </div>
+
+    <!-- причины заказать воду -->
+    <section class="about">
+      <h2 class="about-title">
+        <span class="title-accent">Три причины </span> <br />
+        заказать воду Вятскую
+      </h2>
+
+      <ul class="about-cards">
+        <li class="card">
+          <img
+            src="./img/card-1.svg"
+            alt="карточка номер 1"
+            height="180"
+            width="180"
+          />
+          <p class="card-text card-text-1">
+            Содержит все необходимые макро и микроэлементы — кальций, магний,
+            натрий и йод.
+          </p>
+        </li>
+        <li class="card">
+          <img
+            src="./img/card-2.svg"
+            alt="карточка номер 2"
+            height="161"
+            width="204"
+          />
+          <p class="card-text card-text-2">
+            Более 10 лет на рынке питьевой воды. 2000 клиентов каждый день
+            получают воду. 5000 клиентов обслуживаются в месяц.
+          </p>
+        </li>
+        <li class="card">
+          <img
+            src="./img/card-3.svg"
+            alt="карточка номер 3"
+            height="195"
+            width="200"
+          />
+          <p class="card-text card-text-3">
+            Доставка воды домой и в офис без задержек. Развозим воду по Казани.
+            Возможны поставки в Иннополис, Зеленодольск
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- калькулятор воды -->
+    <div class="fon-calculator-up"></div>
+    <div class="fon-calculator-down"></div>
+
+    <section class="calculator">
+      <h2 class="calculator-name">Калькулятор воды</h2>
+      <ul class="calculator-points">
+        <li class="calc-point">
+          <h4 class="calc-title">мы заказываем воду</h4>
+          <div class="wrapper-button">
+            <button class="calc-btn">в офис</button>
+            <button class="calc-btn calc-btn-active">домой</button>
+          </div>
+          <!-- /.wrapper-button -->
+        </li>
+        <li class="calc-point">
+          <h4 class="calc-title">будут пить</h4>
+          <div class="wrapper-button">
+            <div class="wrap-btn">
+              <button class="btn">-</button>
+              <span class="counter">1</span>
+              <button class="btn">+</button>
+            </div>
+
+            <p class="point-text">человек</p>
+          </div>
+          <!-- /.wrapper-button -->
+        </li>
+        <li class="calc-point">
+          <h4 class="calc-title">нам нужен запас на</h4>
+          <div class="wrapper-button">
+            <div class="wrap-btn">
+              <button class="btn">-</button>
+              <span class="counter">1</span>
+              <button class="btn">+</button>
+            </div>
+
+            <p class="point-text">дней</p>
+          </div>
+          <!-- /.wrapper-button -->
+        </li>
+        <li class="calc-point">
+          <h4 class="calc-title">готовка</h4>
+          <div class="wrapper-button">
+            <button class="calc-btn calc-btn-active">с готовкой</button>
+            <button class="calc-btn">без готовки</button>
+          </div>
+          <!-- /.wrapper-button -->
+        </li>
+      </ul>
+      <div class="order-form">
+        <p class="order-text">Ориентировочное <br />количество воды</p>
+        <img src="./img/bottle-icon.svg" alt="иконка бутылки" />
+        <p class="order-text-strong">1</p>
+        <p class="order-text">
+          Цена со скидкой 10%<br />
+          -от 20 бутылей
+        </p>
+        <img src="./img/credit-card-icon.svg" alt="иконка кредитной карты" />
+        <p class="order-text-strong">100₽</p>
+        <button class="calc-button-order">заказать</button>
+      </div>
+    </section>
+
+    <!-- основной каталог -->
+    <section class="catalog"></section>
+
+    <!-- описание -->
+    <section class="description"></section>
+
+    <!-- наше производство -->
+    <section class="production"></section>
+
+    <!-- подвал -->
+    <footer class="footer"></footer>
+  </body>
 </html>

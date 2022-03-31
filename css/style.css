@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+
+  /* width: 1437px; */
+  /* background-color: blue; */
+}
+.wrapper {
+  width: 1437px;
+  background-image: url(../img/hero-fon.png);
+  background-repeat: no-repeat;
+}
+/* шапка сайта */
+.header {
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 86px;
+  align-items: center;
+  /* background: rosybrown; */
+  padding-top: 8px;
+}
+.header-container {
+  max-width: 1196px;
+  margin: auto;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #e5ff50; */
+}
+
+.nav {
+  max-width: 680px;
+  display: flex;
+  align-items: center;
+  /* background-color: bisque; */
+}
+.nav-link {
+  font-size: 20px;
+  font-weight: 600;
+  color: #50beff;
+  text-decoration: none;
+}
+
+.nav-link:not(:last-child) {
+  margin-right: 35px;
+}
+/* /////////////////////////главная секция ////////////////////////////*/
+.hero {
+  display: flex;
+  height: 780px;
+}
+
+.hero-left {
+  height: 695px;
+  /* background-color: aquamarine; */
+}
+.hero-title {
+  font-size: 56px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 700px;
+  height: 297px;
+  margin-top: 153px;
+  margin-left: 123px;
+}
+form {
+  margin-left: 123px;
+}
+input {
+  width: 525px;
+  font-size: 25px;
+  font-weight: 600;
+  outline: none;
+  padding: 0;
+  height: 69px;
+  border: solid 2px rgba(164, 234, 255, 0.5);
+  border-radius: 10px;
+  background: rgba(164, 234, 255, 0.5);
+}
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 25px;
+}
+.button-order {
+  width: 240px;
+  height: 69px;
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ec1f3a;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin-left: -244px;
+}
+
+.hero-link {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #3287bf;
+  list-style: none;
+  width: 270px;
+  height: 52px;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  padding-left: 9px;
+  padding-right: 8px;
+  border-radius: 10px;
+}
+
+.hero-link:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.list-link {
+  padding-inline-start: 0;
+  margin-top: 25px;
+  margin-right: 115px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.link {
+  height: 100%;
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-rigth {
+  width: 100%;
+}
+.bottle-container {
+  display: flex;
+}
+.bottle-1 {
+  margin-top: 10px;
+  margin-left: -20px;
+  width: 352px;
+  height: 464px;
+  /* margin-right: 282px; */
+}
+.bottle-2 {
+  margin-top: 4px;
+  margin-left: -209px;
+}
+
+/* /////////////////////////секция about////////////////////////////*/
+.about {
+  margin-left: 123px;
+  margin-right: 115px;
+  margin-bottom: 180px;
+}
+.about-title {
+  font-size: 57px;
+  color: #000000;
+  font-weight: 600;
+  line-height: 70px;
+  margin-top: 30px;
+  margin-bottom: 69px;
+}
+
+.title-accent {
+  color: #ec1f3a;
+  font-weight: 700;
+}
+.about-cards {
+  display: flex;
+  padding-inline-start: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 245px;
+  height: 300px;
+  justify-content: space-between;
+}
+.card-text {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 17px;
+}
+
+/*/////////////// калькулятор воды  /////////////*/
+
+.calculator {
+  /* margin: 115px 247px; */
+
+  width: 945px;
+  height: 512px;
+  margin: auto;
+  background: #ffffff;
+  height: 512px;
+  border-radius: 26px;
+}
+.calculator-name {
+  font-size: 52px;
+  line-height: 64px;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 60px;
+  padding-top: 60px;
+}
+.fon-calculator-up {
+  display: block;
+  position: absolute;
+  top: 1479px;
+  left: 0;
+  width: 1600px;
+  height: 301px;
+  background-image: url(../img/fon-calculator-up.svg);
+  background-repeat: no-repeat;
+  z-index: -1;
+
+  /* background: linear-gradient(269.38deg, #6dcafb 3.63%, #1d6faa 96.04%); */
+}
+.fon-calculator-down {
+  display: block;
+  position: absolute;
+  top: 1760px;
+  left: 0;
+  width: 1453px;
+  height: 568px;
+  background-image: url(../img/fon-calculator-down.svg);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.calculator-points {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline-start: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 32px;
+}
+
+.calc-point {
+  width: 170px;
+  /* height: ; */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.calc-point:not(:last-child):not(:first-child) {
+  align-items: center;
+}
+
+.calc-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /* padding-inline-start: 0; */
+}
+
+.calc-point:nth-child(3) > .calc-title {
+  margin-left: 30px;
+}
+
+/* background-color: #ec1f3a; */
+
+.calc-btn {
+  width: 120px;
+  height: 32px;
+  border: 1px solid #006fcc;
+  border-radius: 10px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 500;
+}
+.calc-btn-active {
+  color: #fff;
+  background: #50beff;
+  border: none;
+}
+
+.wrapper-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 82px;
+  /* align-items: baseline; */
+}
+.counter {
+  padding: 10px 17px;
+  margin-left: 17px;
+  margin-right: 17px;
+
+  border: 1px solid #006fcc;
+  border-radius: 8px;
+}
+.btn {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #8399a9;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.wrap-btn {
+  display: flex;
+  flex-direction: row;
+}
+.point-text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.order-form {
+  display: flex;
+  flex-direction: row;
+}
+.order-text {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+}
