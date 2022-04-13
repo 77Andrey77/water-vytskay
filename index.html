@@ -183,28 +183,226 @@
       </ul>
       <div class="order-form">
         <p class="order-text">Ориентировочное <br />количество воды</p>
-        <img src="./img/bottle-icon.svg" alt="иконка бутылки" />
+        <img
+          class="bottle-icon"
+          src="./img/bottle-icon.svg"
+          alt="иконка бутылки"
+        />
         <p class="order-text-strong">1</p>
         <p class="order-text">
           Цена со скидкой 10%<br />
           -от 20 бутылей
         </p>
-        <img src="./img/credit-card-icon.svg" alt="иконка кредитной карты" />
+        <img
+          class="credit-card-icon"
+          src="./img/credit-card-icon.svg"
+          alt="иконка кредитной карты"
+        />
         <p class="order-text-strong">100₽</p>
         <button class="calc-button-order">заказать</button>
       </div>
     </section>
 
     <!-- основной каталог -->
-    <section class="catalog"></section>
+    <div class="fon-catalog-up"></div>
+    <div class="fon-catalog-down"></div>
+
+    <section class="catalog">
+      <h2 class="catalog-name">Основной каталог</h2>
+
+      <ul class="catalog-list">
+        <li class="catalog-item">ВОДА</li>
+        <li class="catalog-item">НАПИТКИ</li>
+        <li class="catalog-item">ПОМПЫ</li>
+        <li class="catalog-item">ДОПОЛНИТЕЛЬНО</li>
+      </ul>
+
+      <ul class="catalog-cards">
+        <li class="catalog-card-content">
+          <img
+            src="./img/card-bottle-19L.png"
+            alt="изображение бутылки 19 литров"
+          />
+          <span class="tara">19 литров</span>
+          <div class="card-price">
+            <p class="price">100₽</p>
+            <p class="quantity">-<span class="quantity-value">1</span>+</p>
+          </div>
+
+          <button class="card-content-btn">ЗАКАЗАТЬ</button>
+        </li>
+        <li class="catalog-card-content">
+          <img
+            src="./img/card-bottle-6L.png"
+            alt="изображение бутылки 6 литров"
+          />
+          <span class="tara">6 литров</span>
+          <div class="card-price">
+            <p class="price">50₽</p>
+            <p class="quantity">-<span class="quantity-value">1</span>+</p>
+          </div>
+
+          <button class="card-content-btn">ЗАКАЗАТЬ</button>
+        </li>
+        <li class="catalog-card-content">
+          <img
+            src="./img/card-bottle-1,5L.png"
+            alt="изображение бутылки 1,5 литров"
+          />
+          <span class="tara">1,5 литров</span>
+          <div class="card-price">
+            <p class="price">35₽</p>
+            <p class="quantity">-<span class="quantity-value">1</span>+</p>
+          </div>
+
+          <button class="card-content-btn">ЗАКАЗАТЬ</button>
+        </li>
+        <li class="catalog-card-content">
+          <img
+            src="./img/card-bottle-0,5L.png"
+            alt="изображение бутылки 0,5 литров"
+          />
+          <span class="tara">0,5 литров</span>
+          <div class="card-price">
+            <p class="price">20₽</p>
+            <p class="quantity">-<span class="quantity-value">1</span>+</p>
+          </div>
+
+          <button class="card-content-btn">ЗАКАЗАТЬ</button>
+        </li>
+      </ul>
+    </section>
 
     <!-- описание -->
-    <section class="description"></section>
+    <section class="description">
+      <h2 class="description-title">
+        Вода вятская — ПИТЬЕВАЯ ВОДА ДЛЯ ДОМА И ОФИСА
+      </h2>
+      <p class="description-text">
+        Выбрать компанию, предлагающую действительно хороший товар, не так-то
+        просто. Высокая цена далеко не всегда означает отменное качество, порой
+        предлагается простая вода из-под крана, о чём можно узнать из этикетки.
+        <br />
+        Наша компания предлагает действительно качественный товар и гарантирует
+        своевременную доставку питьевой воды до дома или офиса. У нас вы можете
+        также купить кулер для воды, что позволит легко запасаться нужным
+        количеством и получать легко и быстро, а также иметь возможность в любой
+        момент налить себе ароматного чаю. Такие приспособления незаменимы в
+        офисе, а теперь используются и в квартирах.
+      </p>
+    </section>
 
     <!-- наше производство -->
-    <section class="production"></section>
+    <section class="production">
+      <h2 class="prduction-title">Наше производство</h2>
+      <video
+        class="production-video"
+        src="./video/video.mp4"
+        poster="./img/production-poster.jpg"
+        controls
+        preload="none"
+      ></video>
+    </section>
 
     <!-- подвал -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="fon-footer-up"></div>
+      <div class="fon-footer-down"></div>
+
+      <div class="address">
+        <img
+          src="./img/logo.svg"
+          alt="логотип Вяцкая вода"
+          class="logo-footer"
+        />
+
+        <a class="address-link" href="tel:+7 (8334) 3-83-66">
+          <img
+            class="address-icon"
+            src="./img/icon-phone.svg"
+            alt="иконка телефона"
+          />
+          +7 (8334) 3-83-66
+        </a>
+        <a class="address-link" href="tel:+7 (953) 696-83-66">
+          <img
+            class="address-icon"
+            src="./img/icon-watsap-footer.svg"
+            alt="иконка телефона"
+          />
+          +7 (953) 696-83-66
+        </a>
+
+        <a class="address-link" href="#"
+          ><img
+            class="address-icon"
+            src="./img/icon-map-footer.svg"
+            alt="иконка карты"
+          />
+          г. Вятские Поляны ул. Чехова дом 34
+        </a>
+        <!-- <p>Вода Вятская (с) 2022</p> -->
+      </div>
+      <!-- /.adress -->
+
+      <nav class="nav-footer">
+        <a href="#" class="nav-link-footer">производство</a>
+        <a href="#" class="nav-link-footer">вода</a>
+        <a href="#" class="nav-link-footer">напитки</a>
+        <a href="#" class="nav-link-footer">доставка</a>
+        <a href="#" class="nav-link-footer">контакты</a>
+      </nav>
+
+      <div class="social">
+        <a class="social-link" href="https://www.youtube.com/">
+          youtube.com
+          <div class="wrapper-icon">
+            <img
+              class="social-icon"
+              src="./img/icon-YouTube-footer.svg"
+              alt="иконка youtube"
+            />
+          </div>
+        </a>
+        <a class="social-link" href="https://vk.com/feed">
+          vk.com/vodakzn
+          <div class="wrapper-icon">
+            <img
+              class="social-icon"
+              src="./img/icon-vk-footer.svg"
+              alt="иконка youtube"
+            />
+          </div>
+        </a>
+        <a class="social-link" href="https://www.instagram.com/">
+          @vodakzn
+          <div class="wrapper-icon">
+            <img
+              class="social-icon"
+              src="./img/icon-inst-footer.svg"
+              alt="иконка youtube"
+            />
+          </div>
+        </a>
+        <a
+          class="social-link"
+          href="https://www.google.com/intl/ru/gmail/about/"
+        >
+          voda@gmail.com
+          <div class="wrapper-icon">
+            <img
+              class="social-icon"
+              src="./img/icon-email-footer.svg"
+              alt="иконка youtube"
+            />
+          </div>
+        </a>
+      </div>
+      <!-- /.social-link -->
+    </footer>
+    <div class="coppirate">
+      <p class="coppirate-text">Вода Вятская (с) 2022</p>
+      <a class="coppirate-link" href="">Политика конфеденциальности </a>
+    </div>
   </body>
 </html>
